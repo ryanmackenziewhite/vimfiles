@@ -19,6 +19,16 @@ endif
 " "}}}
 "
 " Formatting "{{{
+set nowrap
+set textwidth=0 " Do not wrap lines by default
+
+" Setup indentation
+set tabstop=2 " tab size equal to 2 spaces
+set softtabstop=2
+set shiftwidth=2 " default shift width for indents
+set expandtab " replace tabs with ${tabstop} spaces
+set smarttab
+
 set wildmenu
 set wildmode=list:longest,full
 set backspace=indent,eol,start " powerful backspacing
@@ -29,18 +39,13 @@ set tabpagemax=50
 "set up tab controls
 map <C-S-tab> :tabprevious<cr>
 map <C-tab> :tabnext<cr>
-"Set up proper indentation
-set autoindent
+
+set autoindent " always set autoindenting on
 set cindent
-"set tabstop=2
 set smartindent
-"set softtabstop=2
-"set shiftwidth=2
-"set expandtab
+
 set ts=8
 set sw=4
-
-set autoindent                " always set autoindenting on
 
 syntax on
 filetype plugin indent on
@@ -74,8 +79,11 @@ let g:miniBufExplVSplit = 25
 let g:miniBufExplSplitBelow=0
 
 " vim-template
-" let g:email = "ryan.white4@canada.ca"
-" let g:user = "Ryan Mackenzie White"
-" let g:license = ""
+let g:email = "ryan.white4@canada.ca"
+let g:user = "Ryan Mackenzie White"
+let g:license = ""
 
+" Syntastic "{{{
+let g:syntastic_check_on_open = 1
+" "}}}
 
