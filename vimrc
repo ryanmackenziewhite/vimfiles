@@ -1,5 +1,5 @@
 " Ryan Mackenzie White
-" ryan.white@canada.ca 
+" ryan.white4@canada.ca 
 
 " General Settings " {{{
 set nocompatible " disable vi compatibility
@@ -72,6 +72,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'aperezdc/vim-template'
 Plugin 'Raimondi/delimitMate'
 Plugin 'fholgado/minibufexpl.vim'
+Plugin 'pfs/black'
 call vundle#end()
 
 let g:miniBufExplUseSingleClick = 1
@@ -81,7 +82,7 @@ let g:miniBufExplSplitBelow=0
 " vim-template
 let g:email = "ryan.white4@canada.ca"
 let g:user = "Ryan Mackenzie White"
-let g:license = ""
+let g:license = "Copyright © Her Majesty the Queen in Right of Canada, as represented by the Minister of Statistics Canada, 2019."
 
 " Syntastic "{{{
 let g:syntastic_check_on_open = 1
